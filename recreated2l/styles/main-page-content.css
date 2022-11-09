@@ -1,7 +1,7 @@
 .main-page-content{
     display:flex;
     justify-content:space-between;
-    padding-left:350px;
+    padding-left:300px;
     padding-right:400px;
     padding-top:40px;
 }
@@ -9,16 +9,11 @@
 .courses-section{
     background-color:white;
     border-radius:5px;
+    width:600px;
+    padding-left:20px;
+    padding-right:20px;
 }
 
-.courses-header{
-
-}
-
-
-
-.courses-dropdown-menu{
-}
 
 .courses-semesters-header{
     display:flex;
@@ -30,6 +25,23 @@
     font-size:16px;
 }
 
+.course-grid{
+    display:grid;
+    column-gap:5px;
+    row-gap:40px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows:1fr 1fr 1fr;
+}
+
+.course-preview{
+    display:grid;
+    grid-template-rows: 70px 60px;
+    grid-template-columns:200px;
+}
+
+.thumbnail{
+    width:100%;
+}
 
 
 .news-section{
@@ -39,15 +51,3 @@
 }
 
 
-.course-grid{
-    display:grid;
-    column-gap:5px;
-    row-gap:20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr;
-}
-
-.course-preview{
-    display:grid;
-    grid-template-rows: 1fr 1fr;
-}
