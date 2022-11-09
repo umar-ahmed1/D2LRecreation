@@ -1,0 +1,61 @@
+.main-header{
+    margin:0;
+    display:flex;
+    justify-content:space-between;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    background-color:white;
+    height:85px;
+
+}
+
+.left-section{
+    display:flex;
+    flex:1;
+    margin-left:350px;
+    align-items:center;
+}
+
+.uofc-logo{
+    height:60px;
+}
+
+.main-header-icon{
+    margin-right:15px;
+    cursor:pointer;
+}
+
+
+.right-section{
+    display:flex;
+    margin-right:400px;
+    align-items:center;
+}
+
+
+.user-info{
+    display:flex;
+    align-items:center;
+    margin-right:15px;
+}
+
+.user-info p{
+    font-size:14px;
+}
+
+.current-user-icon{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:maroon;
+    color:white;
+    border: 1px solid maroon;
+    margin-right:15px;
+    font-weight:700;
+    border-radius:4px;
+    padding:10px;
+
+}
+
+
+
+

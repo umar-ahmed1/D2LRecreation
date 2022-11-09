@@ -1,0 +1,174 @@
+
+/* WE USE FLEXBOX WHEN THE SIZE OF THE CONTENT IS FOCUSED AND CAN CHANGE OR THE CONTENT CAN CHANGE*/
+.header{
+    height:57px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position:fixed;
+    z-index:1000;
+    top:0;
+    left:0;
+    right:0;
+    background-color:white;
+    border-bottom: 1px solid rgb(222,222,222);
+}
+
+/* if we dont give a section a width itll stretch to contain all the content in the section*/
+.left-section{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height:24px;
+    margin-left:24px;
+    margin-right:24px;
+    cursor:pointer;
+}
+
+.youtube-logo{
+    height:20px;    
+    cursor:pointer;
+}
+
+/* so the middle section is flex size because if you go to utube and resize then the left,right stay constant but the middle search bar section gets smaller
+so we make it flex: 1 and the others will have a defined width/height*/
+.middle-section{
+    flex: 1;
+    /* remember u can find the exact numbers by inspecting the actual website*/
+    margin-left:60px;
+    margin-right: 29px;
+    max-width:470px;
+    display:flex;
+    align-items:center;
+}
+
+.search-bar{
+    flex:1;
+    height:36px;
+    /* we want it to be smaller than default width so we set width to 0 but it can also take up as much space as it has cuz flex*/
+    width:0;
+    padding-left:10px;
+    font-size:16px;
+    border: 1px solid rgb(204,204,204);
+    border-radius:2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+}
+/* how to target the placeholder text */
+.search-bar::placeholder{
+    font-size:16px;
+}
+
+.search-button{
+    height:40px;
+    width:64px;
+    border-width:1px;
+    border-style:solid;
+    border-color: rgb(204,204,204);
+    background-color:rgb(247,247,247);
+    margin-left:-1px;
+    margin-right: 10px;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container,
+.current-user-picture-container{
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    cursor:pointer;
+}
+
+/* targetting tooltip class only inside search button*/
+.search-button .tooltip, 
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip{
+    position:absolute;
+    bottom:10;
+    background-color:gray;
+    color:white;
+    padding: 4px 8px;
+    border-radius:2px;
+    font-size:12px;
+    bottom:-30px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space:nowrap;
+}
+
+/* the tooltip when we hover*/
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{
+    opacity:1;
+
+}
+
+.search-icon{
+    height:20px;
+}
+
+.voice-search-button{
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    border: none;
+    background-color:rgb(247,247,247);
+}
+
+.voice-search-icon{
+    height:24px;
+}
+
+.right-section{
+    width:182px;
+    margin-right:24px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    /*prevent section from shrinking*/
+    flex-shrink:0;
+}
+
+.upload-icon{
+    height:24px;
+}
+
+.youtube-apps-icon{
+    height:24px;
+}
+
+.notifications-icon{
+    height:24px;
+}
+
+.notifications-icon-container{
+    position:relative;
+}
+
+.notifications-count{
+    position:absolute;
+    top:-2px;
+    right:-4px;
+    background-color:rgb(200,0,0);
+    color:white;
+    font-size:11px;
+    padding: 2px 5px 2px 5px;
+    border-radius:10px;
+
+}
+
+.current-user-picture{
+    height:32px;
+    border-radius:16px;
+}

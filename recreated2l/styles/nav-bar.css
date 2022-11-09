@@ -1,0 +1,22 @@
+.nav-bar{
+    display:flex;
+    align-items:center;
+    flex:end;
+    background-color:white;
+    height:60px;
+    border-bottom: 1px solid rgb(231,230,230);
+    padding-left:350px;
+}
+
+.nav-bar a{
+    font-size:19px;
+    margin-right:20px;
+    color:rgb(32,33,34);
+    text-decoration:none;
+
+}
+
+.nav-bar a:hover{
+    color:rgb(97, 152, 224);
+    text-decoration:underline;
+}

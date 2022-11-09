@@ -1,0 +1,79 @@
+
+.thumbnail{
+    width: 100%;
+}
+
+.video-title{
+    font-size:14px;
+    /* this sets the font to roboto 500 which we downloaded which is medium bold*/
+    font-weight: 500;
+    line-height:20px;
+    margin-bottom:12px;
+}
+
+.video-author,
+.video-stats{
+    font-size:12px;
+    color: rgb(96,96,96);
+}
+
+.video-author{
+    margin-bottom:4px;
+}
+/* USE GRID HERE BECAUSE WE WANNA MAKE A GRID AND ARENT TOO FOCUSED ON SIZE*/
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture{
+    width:36px;
+    border-radius:40px;
+}
+
+/* we make this relative because its a container*/
+.thumbnail-row{
+    margin-bottom: 8px;
+    position:relative;
+}
+
+.video-time{
+    font-size:12px;
+    font-weight:500;
+    color:white;
+    background-color:black;
+    position:absolute;
+    bottom:8px;
+    right:5px;
+    padding:4px;
+    border-radius:2px;
+}
+
+
+.video-grid{
+    display:grid;
+    column-gap:16px;
+    row-gap:40px;
+}
+
+@media (max-width:750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:751px) and (max-width:999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+}
+
+@media(min-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+

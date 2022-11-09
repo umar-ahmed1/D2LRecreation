@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- head defines info/configuration of the file-->
+    <head>
+        <!-- meta tag to define characterset of the file-->
+        <meta charset = "UTF-8">
+        <!-- this is a comment, the below line is the meta tag for the description
+        of the website and content includes what the description actually is-->
+        <meta name="description" content="This is my first website test">
+        <meta name="author" content="Umar">
+        <!-- search engine could use keywords tag to help ur page get found on google
+        but most search engines dont rlly look at it anymore-->
+        <meta name="keywords" content="HTML,Tutorial,Test,Learning,Cat">
+        <!-- viewport controls how website is shown on other things like phone-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Test Project</title>
+    </head>
+
+    <body style="background-color:lightblue">
+        <!-- for the top content of the body (title,etc)-->
+        <header>
+            <!-- if i had a top navigation bar it would go here-->
+            <nav>
+                Home about_me  projects etc etc
+            </nav>
+            <h2>Umar's Website</h2>
+            <br>
+        </header>
+        <!-- for main content of the website-->
+        <main>
+            <!-- if i had a news article about battlepass-->
+            <div>
+                <!-- section 1 of the article-->
+                <section>
+                    <p>This is my <u>paragraph</u> on <b><i>fortnite</i></b> thanos car</p>
+                    <hr>
+                </section> 
+                <!-- section 2 of the article-->
+                <section>
+                    <p>This is <small>the</small><big> second</big> paragraph</p>
+                    <!--- commenting out these lines
+                    <p>H<sub>2</sub>O</p>
+                    <p>10<sup>2</sup> = 100</p>
+                    -->
+                </section>
+                <p style="color:blue; background-color:grey">fortnite battle pass blue but grey</p>
+            </div>
+            <!-- article on different types of linking-->
+            <div>
+                <!-- how to put a link that redirects you on the same tab -->
+                <a href="https://www.google.com"><h1>click this link for google</h1></a>
+                <!-- how to put a link that redirects you on a new tab -->
+                <a href="https://www.google.com" target ="_blank"><p>click this link for <em>google</em> new tab</p></a>
+                <!-- redirect you t6o a different html thing-->
+                <a href="test2.html">go to page2</a>
+                <a href="kitten.jpg"><h4>go to cat pic! :D</h4></a>
+            </div>
+
+            <!-- messing aroudn with images. alt is what txt appears if img not found
+            setting only the width or height will keep aspect ratio locked-->
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Cute_grey_kitten.jpg" 
+                alt="a really cute kitty :D" style="width:150px">  
+                
+                <!-- now we show how to put a video on here (the text shows up if video cant be displayed)-->
+                <video src="blabla.mp4" 
+                poster="kitten.jpg" style="width:200px" autoplay controls></video>
+
+                <!-- now how to put a utube video-->
+                <iframe width="360" height="185" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- now we mess with ul - unorder lists and ol-ordered lists and dl- description list -->
+            <div>
+                <ul>
+                    <li>Apples</li>
+                    <li>Oranges
+                        <ol type="i">
+                            <li>Thanos</li>
+                            <li>Car</li>
+                        </ol>
+                    </li>
+                    <li>Bananas</li>
+                </ul>
+                <ol type="A">
+                    <li>Apples</li>
+                    <li>Oranges</li>
+                    <li>Bananas</li>
+                </ol>
+
+                <dl>
+                    <dt>Apples</dt>
+                    <dd>- They are red</dd>
+                    <dt>Bananas</dt>
+                    <dd>- They are yellow</dd>
+                </dl>
+            </div>
+
+            <!-- now we mess with tables and tr-table row and td- table data in a row, th- table header 
+            thead- all info in table head and tbody- all info in table body
+            can also control colspan (how much space each column takes up)-->
+            <div>
+                <table>
+                    <caption><h2>List of Numbers</h2></caption>
+                    <thead>
+                        <tr>
+                            <th>num1</th>
+                            <th>num2</th>
+                            <th>num3</th>    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>one</td>
+                            <td>two</td>
+                            <td>three</td>    
+                        </tr>
+                        <tr>
+                            <td>four</td>
+                            <td>five</td>
+                            <td>six</td>    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- lets create some forms (they wont work cuz we need javascript but we do HTML part)
+            also lets create some textboxes-->    
+            <div>
+                <input type="text" value="Enter Your Username">
+                <p>Password</p>    
+                <input type="password">
+                <div>
+                    <textarea rows="5" cols="15">
+                        Enter a paragraph
+                    </textarea>
+                </div>
+                <div>
+                    <input type="date">
+                    <input type="range">
+                    <input type="file">
+                </div>
+                <div>
+                    <form>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+            <!-- now lets look at iframes (imbedding stuff like the yt vid)-->
+            <div>
+                <iframe src="test2.html" width="300" height="200">
+                </iframe>
+
+            </div>
+
+
+        </main>
+        
+        <!-- bottom part -->    
+        <footer>
+            <p> tank u for visiting footer moment</p>
+        </footer>
+    </body> 
+
+    
+
+</html>

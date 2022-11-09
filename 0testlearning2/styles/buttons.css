@@ -1,0 +1,76 @@
+/* what the button looks like normally*/
+.subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:16px;
+    padding-right:16px;
+    vertical-align: top;
+    /* transition the opacity in 0.15 second from regular to when hovered*/
+    transition: opacity 0.15s;
+}
+/* what the button looks like when hovered over*/
+.subscribe-button:hover{
+    opacity: 0.8; 
+}
+/* what the button looks like when clicked*/
+.subscribe-button:active{
+    opacity: 0.5;
+}
+
+.join-button {
+    background-color: white;
+    border-color: rgb(6,95,212);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(6,95,212);
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    /* we do padding instead of width,height cuz if u change the text and theres too much the size
+    is fixed and then it overflows and problem yadadadada */
+    padding-top:9px;
+    padding-bottom:9px;
+    padding-left:16px;
+    padding-right:16px;
+    transition: background-color 0.15s, color 0.15s;  
+}
+
+.join-button:hover{
+    background-color: rgb(6,95,212);
+    color: white;
+}
+
+.join-button:active{
+    opacity:0.7;
+}
+
+.tweet-button {
+    background-color: rgb(29,155,240);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px; 
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:16px;
+    padding-right:16px;
+    /* add a transition for the shadow */
+    transition: box-shadow 0.15s;   
+    vertical-align: top;
+}
+
+.tweet-button:hover{
+    /* horizontal position, vertical position, blur, color (we use rgba to also have opacity the 4th value) */ 
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15)
+}
