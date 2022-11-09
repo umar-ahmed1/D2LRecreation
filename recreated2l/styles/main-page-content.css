@@ -1,0 +1,39 @@
+.main-page-content{
+    display:flex;
+    justify-content:space-between;
+    padding-left:350px;
+    padding-right:400px;
+    padding-top:40px;
+}
+
+.courses-section{
+    background-color:white;
+    border-radius:5px;
+}
+
+.courses-header{
+
+}
+
+
+
+.courses-dropdown-menu{
+}
+
+.courses-semesters-header{
+    display:flex;
+    border-bottom: 1px solid rgb(231,230,230);
+}
+
+.courses-semesters-header div{
+    margin-right:10px;
+    font-size:16px;
+}
+
+
+
+.news-section{
+    background-color:white;
+    width:400px;
+    border-radius:5px;
+}
