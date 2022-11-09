@@ -13,10 +13,39 @@
     margin-right:20px;
     color:rgb(32,33,34);
     text-decoration:none;
-
+    position:relative;
 }
 
 .nav-bar a:hover{
     color:rgb(97, 152, 224);
     text-decoration:underline;
+}
+
+
+
+.tools-tooltip{
+    position:absolute;
+    width:200px;
+    left:-55px;
+    right:0;
+    background-color:white;
+    border-radius:2px;
+    font-size:15px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space:nowrap;
+    text-decoration:none;
+    color:rgb(83, 83, 83);
+}
+
+.tools-tooltip div{
+    border-bottom:1px solid rgb(204, 200, 200);
+    padding-top:15px;
+    padding-bottom:15px;
+    align-items:left;
+}
+
+#tools:hover .tools-tooltip{
+    opacity:1;
 }

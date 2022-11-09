@@ -48,8 +48,7 @@
     grid-template-rows: 100px 1fr;
     grid-template-columns:250px;
     border: 1px solid rgb(230,230,230);
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border-radius:10px;
 }
 
 .thumbnail{
