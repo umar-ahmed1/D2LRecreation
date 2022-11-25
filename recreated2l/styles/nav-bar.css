@@ -49,3 +49,10 @@
 #tools:hover .tools-tooltip{
     opacity:1;
 }
+
+@media (max-width:900px){
+    .nav-bar{
+        padding-left:20px;
+    }
+
+}
