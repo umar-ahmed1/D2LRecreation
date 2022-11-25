@@ -46,7 +46,7 @@
     align-items:left;
 }
 
-#tools:hover .tools-tooltip{
+.active .tools-tooltip{
     opacity:1;
 }
 
